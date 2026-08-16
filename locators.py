@@ -1,15 +1,19 @@
 from selenium.webdriver.common.by import By
 
+
 class Locators:
+#главная страница
     PERSONAL_ACCOUNT = (By.XPATH, ".//p[text()='Личный Кабинет']")  #кнопка входа в личный кабинет
+    MAIN_PAGE_LOGIN_BUTTON = (By.XPATH, ".//button[text()='Войти в аккаунт']")  # кнопка Войти в аккаунт
+    PLACE_ORDER_BUTTON = (By.XPATH, ".//button[text()='Оформить заказ']")   #кнопка Оформить заказ
+#форма регистрации и входа
     REGISTRATION_LINK = (By.XPATH, ".//a[text()='Зарегистрироваться']")  #ссылка для регистрации
-    #форма регистрации
     NAME_FIELD = (By.XPATH, "(.//input[@name='name'])[1]")  #поле ввода имени
-    EMAIL_FIELD = (By.XPATH, "(.//input[@name='name'])[2]") #поле ввода почты
+    REG_EMAIL_FIELD = (By.XPATH, "(.//input[@name='name'])[2]") #поле ввода почты при регистрации
     PASSWORD_FIELD = (By.XPATH, ".//input[@name='Пароль']") #поле ввода пароля
     BUTTON_REGISTRATION = (By.XPATH, ".//button[text()='Зарегистрироваться']") #кнопка регистрации
-    LOGIN_BUTTON = (By.XPATH, ".//button[text()='Войти']") #кнопка входа после успешной регистрации
-
-
-
-    #Inna_Zemtsova_53_978@yandex.ru
+    ERROR_INVALID_PASSWORD = (By.XPATH, ".//p[text()='Некорректный пароль']")  #ошибка регистрации при вводе некорректного пароля
+    LOG_EMAIL_FIELD = (By.XPATH, "(.//input[@name='name'])") #поле ввода почты зарегистрированного пользователя
+    LOGIN_BUTTON = (By.XPATH, ".//button[text()='Войти']") #кнопка входа зарегистрированного пользователя
+    PASSWORD_RECOVERY_LINK = (By.XPATH, ".//a[text()='Восстановить пароль']")  #ссылка для восстановления пароля
+    LOGIN_LINK = (By.XPATH, ".//a[text()='Войти']")  #ссылка для входа в форме восстановления пароля

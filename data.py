@@ -8,6 +8,8 @@ class Data:
     NUMBER_COHORT = "53"
     DOMAIN = "@yandex.ru"
     PASSWORD = "Qaz12345"
+    PASSWORD_INVALID = "123"
+    REGISTERED_MAIL = "Inna_Zemtsova_53_978@yandex.ru"
 
     @staticmethod
     def email_generation():
