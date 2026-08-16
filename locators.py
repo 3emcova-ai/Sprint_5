@@ -7,7 +7,12 @@ class Locators:
     MAIN_PAGE_LOGIN_BUTTON = (By.XPATH, ".//button[text()='Войти в аккаунт']")  # кнопка Войти в аккаунт
     PLACE_ORDER_BUTTON = (By.XPATH, ".//button[text()='Оформить заказ']")   #кнопка Оформить заказ
     CONSTRUCTOR_BUTTON = (By.XPATH, ".//p[text()='Конструктор']")  #кнопка Конструктор
-    CONSTRUCTOR_PAGE = (By.XPATH, ".//h1[text()='Соберите бургер']")  #кнопка Конструктор
+    CONSTRUCTOR_SECTION = (By.XPATH, ".//h1[text()='Соберите бургер']")  #раздел Конструктор
+    BUNS_SECTION = (By.XPATH, ".//h2[text()='Булки']")  #раздел Булки
+    SAUCES_BUTTON = (By.XPATH, ".//span[text()='Соусы']")  #кнопка Соусы
+    SAUCES_SECTION = (By.XPATH, ".//h2[text()='Соусы']")  #раздел Соусы
+    TOPPINGS_BUTTON = (By.XPATH, ".//span[text()='Начинки']")  #кнопка Начинки
+    TOPPINGS_SECTION = (By.XPATH, ".//h2[text()='Начинки']")  #раздел Начинки
 #форма регистрации и входа
     REGISTRATION_LINK = (By.XPATH, ".//a[text()='Зарегистрироваться']")  #ссылка для регистрации
     NAME_FIELD = (By.XPATH, "(.//input[@name='name'])[1]")  #поле ввода имени

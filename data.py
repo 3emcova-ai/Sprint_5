@@ -1,5 +1,6 @@
 import random
 
+
 class Data:
     STELLAR_BURGERS_URL = "https://stellarburgers.education-services.ru/"
 
@@ -14,6 +15,3 @@ class Data:
     @staticmethod
     def email_generation():
         return f"{Data.NAME}_{Data.SURNAME}_{Data.NUMBER_COHORT}_{random.randint(100, 999)}{Data.DOMAIN}"
-
-
-    
