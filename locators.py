@@ -8,6 +8,7 @@ class Locators:
     PLACE_ORDER_BUTTON = (By.XPATH, ".//button[text()='Оформить заказ']")   #кнопка Оформить заказ
     CONSTRUCTOR_BUTTON = (By.XPATH, ".//p[text()='Конструктор']")  #кнопка Конструктор
     CONSTRUCTOR_SECTION = (By.XPATH, ".//h1[text()='Соберите бургер']")  #раздел Конструктор
+    BUNS_BUTTON = (By.XPATH, ".//span[text()='Булки']")  #кнопка Булки
     BUNS_SECTION = (By.XPATH, ".//h2[text()='Булки']")  #раздел Булки
     SAUCES_BUTTON = (By.XPATH, ".//span[text()='Соусы']")  #кнопка Соусы
     SAUCES_SECTION = (By.XPATH, ".//h2[text()='Соусы']")  #раздел Соусы
