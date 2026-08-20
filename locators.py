@@ -14,6 +14,7 @@ class Locators:
     SAUCES_SECTION = (By.XPATH, ".//h2[text()='Соусы']")  #раздел Соусы
     TOPPINGS_BUTTON = (By.XPATH, ".//span[text()='Начинки']")  #кнопка Начинки
     TOPPINGS_SECTION = (By.XPATH, ".//h2[text()='Начинки']")  #раздел Начинки
+    ACTIVE_SECTION_TAB = (By.XPATH, ".//div[contains(@class, 'tab_tab_type_current__2BEPc')]/span") # активный таб разделов Булки,Соусы,Начинки
 #форма регистрации и входа
     REGISTRATION_LINK = (By.XPATH, ".//a[text()='Зарегистрироваться']")  #ссылка для регистрации
     NAME_FIELD = (By.XPATH, "(.//input[@name='name'])[1]")  #поле ввода имени
