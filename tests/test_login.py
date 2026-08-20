@@ -6,7 +6,11 @@ from locators import Locators
 
 
 class TestLogin:
-    def test_login_button_on_main_page(self, driver, authorization):
+    def test_login_button_on_main_page(self, driver):
+        WebDriverWait(driver, 3).until(EC.presence_of_element_located(Locators.MAIN_PAGE_LOGIN_BUTTON)).click()
+        WebDriverWait(driver, 3).until(EC.presence_of_element_located(Locators.LOG_EMAIL_FIELD)).send_keys(Data.REGISTERED_MAIL)
+        driver.find_element(*Locators.PASSWORD_FIELD).send_keys(Data.PASSWORD)
+        driver.find_element(*Locators.LOGIN_BUTTON).click()
         assert WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.PLACE_ORDER_BUTTON))
  
     def test_login_button_in_personal_account(self, driver):
