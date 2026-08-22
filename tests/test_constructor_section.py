@@ -10,6 +10,9 @@ from locators import Locators
 class TestConstructorSection:
     def test_section_buns(self, driver, authorization):
         WebDriverWait(driver, 3).until(EC.presence_of_element_located(Locators.SAUCES_BUTTON)).click()
+        WebDriverWait(driver, 3).until(EC.element_to_be_clickable(Locators.BUNS_BUTTON)).click()
+        active_buns_tab = driver.find_element(*Locators.ACTIVE_SECTION_TAB).text
+        assert 'Булки' in active_buns_tab
         assert WebDriverWait(driver, 3).until(EC.visibility_of_element_located(Locators.BUNS_SECTION))
         
     @pytest.mark.parametrize('button_locator, section_locator, section_name', [(Locators.SAUCES_BUTTON, Locators.SAUCES_SECTION, 'Соусы'), (Locators.TOPPINGS_BUTTON, Locators.TOPPINGS_SECTION, 'Начинки')])
